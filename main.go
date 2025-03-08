@@ -92,6 +92,24 @@ func main() {
 	// Get addition and the length of the number
 	result, length := myFunc(20, 40)
 	fmt.Printf("myFunc addition is %v and length is %v\n", result, length)
+
+	// Call the struct
+	var person1 Person
+	person1.name = "Gerald"
+	person1.age = 20
+
+	fmt.Println("Name:", person1.name)
+	fmt.Println("Age:", person1.age)
+
+	// Maps
+	var newmap = map[string]int{"one": 1, "two": 2}
+	fmt.Printf("newmap\t%v\v\n", newmap)
+}
+
+// Person Struct
+type Person struct {
+	name string
+	age  int
 }
 
 // Message Functions
